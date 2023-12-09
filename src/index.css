@@ -4,10 +4,11 @@
   padding: 0%;
   box-sizing: border-box;
 }
-a{
+a {
   text-decoration: none;
   color: white;
-}a:hover{
+}
+a:hover {
   color: white;
 }
 
@@ -18,62 +19,82 @@ body {
   display: flex;
   justify-content: center;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #171717;
+  background-color: #ffffff;
   color: white;
 }
 
 /* style root div */
-#root{
-  width: 80%;
-  border-right: 1px solid #323232;
-  border-left: 1px solid #323232;
-  background-color: rgba(211, 211, 211, 0.747);
+#root {
+  width: 90%;
+  /* border-right: 1px solid #323232;
+  
+  border-left: 1px solid #323232; */
+  border: 1px solid gray;
+  border-top: none;
+  background-color: rgba(255, 255, 255, 0.747);
+  margin: 10px;
+  border-radius: 20px;
+  /*
+* Created with https://www.css-gradient.com
+* Gradient link: https://www.css-gradient.com/?c1=9cfee1&c2=7055da&gt=l&gd=dtl
+*/
+  background: #9cfee1;
+  background: linear-gradient(135deg, #9cfee1, #7055da);
 }
 
 /* style navbar component ---------------------------------*/
-.navbar{
+.navbar {
   align-items: center;
   display: flex;
   height: 100px;
   padding: 0px 20px;
   justify-content: space-between;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
   /* border-bottom: 1px solid #323232;s */
   /* border-radius: 10px; */
-  background-color: #171717;
+  background-color: #a3a3a3;
+  /*
+* Created with https://www.css-gradient.com
+* Gradient link: https://www.css-gradient.com/?c1=d5181d&c2=7a4dc5&gt=l&gd=dtl
+*/
+  background: #d5181d;
+  background: linear-gradient(135deg, #d5181d, #7a4dc5);
 }
-.right-nav{
+.right-nav {
   display: flex;
   align-items: center;
 }
-.right-nav h5{
-  color: #DDDDDD;
-  margin-right: 10px;
+.right-nav h5 {
+  color: #dddddd;
+  margin-right: 20px;
 }
-.addhabit-btn{
+.addhabit-btn {
   cursor: pointer;
   color: white;
-  background-color: #424242;
+  background-color: #ff0808;
   padding: 8px 20px;
   border-radius: 7px;
+  border: none;
 }
-.addhabit-btn:hover{
+.addhabit-btn:hover {
   background-color: white;
   color: black;
 }
 /* modal */
-.modal-content{
-  background-color: #333333;
+.modal-content {
+  background-color: #8f8f8ff1;
 }
-.modal-header{
+.modal-header {
   border: none;
 }
-.modal-footer{
+.modal-footer {
   border: none;
 }
 /* ---------------------------------------------------- */
 
 /* habits components style------------------------------ */
-.habits{
+.habits {
   width: 100%;
   /* background-color: #304950; */
 }
@@ -95,26 +116,26 @@ body {
   background-color: #4a4343a8;
 }
 
-.habit-left{
+.habit-left {
   display: flex;
   align-items: center;
 }
-.habit-left i{
-  color: #2AA8D0;
+.habit-left i {
+  color: #2aa8d0;
   padding: 10px;
   border-radius: 50%;
   background-color: #304950;
   margin-right: 10px;
 }
-.day-complete{
+.day-complete {
   color: #161516;
-  font-size:small;
+  font-size: small;
 }
-.habit-right{
+.habit-right {
   display: flex;
   align-items: center;
 }
-.log-btn{
+.log-btn {
   text-decoration: none;
   cursor: pointer;
   background-color: #726c6c95;
@@ -124,14 +145,14 @@ body {
   color: black;
   border: 1px solid black;
 }
-.log-btn:hover{
+.log-btn:hover {
   color: white;
   background-color: #3c3a3a;
 }
-.log-btn i{
+.log-btn i {
   margin-right: 5px;
 }
-.fa-trash{
+.fa-trash {
   cursor: pointer;
   padding: 10px;
   border-radius: 7px;
@@ -140,29 +161,29 @@ body {
 /* ------------------------------------------------------*/
 
 /* style week view container --------------------------- */
-.days-container{
+.days-container {
   margin: 20px 0px;
   display: flex;
   justify-content: space-around;
 }
 /* style day view component */
-.day-container{
+.day-container {
   height: 100px;
   width: 150px;
   background-color: #323232;
   border-radius: 20px;
   padding: 5px;
 }
-p{
+p {
   margin: 0%;
 }
-.circle-icon{
+.circle-icon {
   font-size: 24px;
   margin: 5px 11px;
   /* color: #0B5ED7; */
   cursor: pointer;
 }
-.active{
-  color: #0B5ED7 ;
+.active {
+  color: #0b5ed7;
 }
 /* ------------------------------------------------------*/

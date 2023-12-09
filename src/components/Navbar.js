@@ -41,13 +41,13 @@ const Navbar = ({ name }) => {
       <div className="navbar">
         <h3>
           {/* according to time it shows morning, afternoon, evening, and night */}
-          {hour <12
-            ? "Morning"
+          {hour < 12
+            ? "Good Morning"
             : hour < 17
-            ? "Afternoon"
-            : hour <21
-            ? "Evening"
-            : "Night"}
+            ? "Good Afternoon"
+            : hour < 21
+            ? "Good Evening"
+            : "Good Night"}
         </h3>
         <h3>{timeString}</h3>
         <div className="right-nav">
